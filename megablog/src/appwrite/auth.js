@@ -47,6 +47,15 @@ export class AuthService {
         }
         return null;
     }
+
+    async function logout() {
+        try {
+        await this.account.deleteSessions();    
+        } catch (await) {
+            console.log("Appwrite service :: logout ::error",error);
+        }
+        
+    }
 }
 
 // we can export by making object so that all the functionality can be used upon it .
