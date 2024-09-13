@@ -27,8 +27,6 @@ export class AuthService {
         } catch(error){
             throw error;
         }
- 
- 
     }
 
     async login({email,password}){
